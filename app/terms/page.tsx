@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { privacyUrl } from "../../lib/site";
 
 export const metadata: Metadata = {
   title: "Terms of Use",
@@ -152,7 +153,7 @@ export default function TermsPage() {
         </p>
         <p>
           <Link className="contact" href="/privacy">
-            https://bikey.app/privacy
+            {privacyUrl}
           </Link>
         </p>
 
